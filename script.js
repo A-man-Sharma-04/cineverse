@@ -1,4 +1,4 @@
-// Sample data for movies/series/anime
+// Sample data for movies/series/anime with working poster URLs
 const mediaData = [
     {
         id: 1,
@@ -11,17 +11,17 @@ const mediaData = [
         poster: "https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
         duration: "51 min"
     },
-    {
-        id: 2,
-        title: "Attack on Titan",
-        type: "anime",
-        genre: ["Action", "Adventure", "Drama"],
-        year: 2013,
-        rating: 9.0,
-        description: "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
-        poster: "https://m.media-amazon.com/images/M/MV5BNjZjODI5NmUtZTc2My00NThjLWE0YjgtMjkwM2Q1ZTY4N2I0XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg",
-        duration: "24 min"
-    },
+   /* {
+    id: 2,
+    title: "One Punch Man",
+    type: "anime",
+    genre: ["Action", "Comedy", "Sci-Fi"],
+    year: 2015,
+    rating: 8.8,
+    description: "The story of Saitama, a hero that does it just for fun & can defeat his enemies with a single punch.",
+    poster: "https://image.tmdb.org/t/p/w500/3LGWj9Q37qYRzZ54hY1QjQoJQqN.jpg",
+    duration: "24 min"
+    },*/
     {
         id: 3,
         title: "Inception",
@@ -43,18 +43,18 @@ const mediaData = [
         description: "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
         poster: "https://m.media-amazon.com/images/M/MV5BZDhlMzY0ZGItZTcyNS00ZTAxLWIyMmYtZGQ2ODg5OWZiYmJkXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_.jpg",
         duration: "40 min"
-    },
+    }, /*
     {
-        id: 5,
-        title: "Demon Slayer",
-        type: "anime",
-        genre: ["Action", "Fantasy", "Adventure"],
-        year: 2019,
-        rating: 8.5,
-        description: "A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.",
-        poster: "https://m.media-amazon.com/images/M/MV5BZjZjNzI5MmYtYmFjYS00OWYzLTg0YTYtYzFjNzMzNjFjMjFkXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg",
-        duration: "23 min"
-    },
+    id: 5,
+    title: "Tokyo Ghoul",
+    type: "anime",
+    genre: ["Action", "Drama", "Horror"],
+    year: 2014,
+    rating: 7.8,
+    description: "A college student is attacked by a ghoul and becomes a half-ghoul himself, forced to consume human flesh to survive.",
+    poster: "https://m.media-amazon.com/images/M/MV5BMTk3ODA1NDY4NF5BMl5BanBnXkFtZTgwMzI1MzQ3NjM@._V1_.jpg",
+    duration: "24 min"
+    },*/
     {
         id: 6,
         title: "Parasite",
@@ -68,14 +68,14 @@ const mediaData = [
     },
     {
         id: 7,
-        title: "The Queen's Gambit",
+        title: "Money Heist",
         type: "series",
-        genre: ["Drama"],
-        year: 2020,
-        rating: 8.6,
-        description: "Orphaned at the tender age of nine, prodigious introvert Beth Harmon discovers and masters the game of chess in 1960s USA. But child stardom comes at a price.",
-        poster: "https://m.media-amazon.com/images/M/MV5BM2EwMmRhMmUtMzBmMS00ZDQ3LTg4OGEtNjlkODk3ZTMxMmJkXkEyXkFqcGdeQXVyMjM5ODk1NDU@._V1_.jpg",
-        duration: "60 min"
+        genre: ["Action", "Crime", "Mystery"],
+        year: 2017,
+        rating: 8.2,
+        description: "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+        poster: "https://m.media-amazon.com/images/M/MV5BODI0ZTljYTMtODQ1NC00NmI0LTk1YWUtN2FlNDM1MDExMDlhXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_.jpg",
+        duration: "70 min"
     },
     {
         id: 8,
@@ -101,26 +101,26 @@ const mediaData = [
     },
     {
         id: 10,
-        title: "Breaking Bad",
+        title: "Game of Thrones",
         type: "series",
-        genre: ["Crime", "Drama", "Thriller"],
-        year: 2008,
-        rating: 9.5,
-        description: "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
-        poster: "https://m.media-amazon.com/images/M/MV5BNDkyZThhNmMtZDBjYS00NDBmLTlkMjgtNWM3ZWQ4N2Y4NzQ0XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg",
-        duration: "49 min"
-    },
-    {
-        id: 11,
-        title: "Fullmetal Alchemist",
-        type: "anime",
         genre: ["Action", "Adventure", "Drama"],
-        year: 2003,
-        rating: 8.1,
-        description: "Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes wrong and leaves them in damaged physical forms.",
-        poster: "https://m.media-amazon.com/images/M/MV5BZmEzN2YzOTQtMDY0Yy00OGJlLTkzNDgtNjNhNjZkMzZkNjdhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
-        duration: "24 min"
-    },
+        year: 2011,
+        rating: 9.2,
+        description: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+        poster: "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+        duration: "57 min"
+    },/*
+{
+    id: 11,
+    title: "Neon Genesis Evangelion",
+    type: "anime",
+    genre: ["Animation", "Action", "Drama"],
+    year: 1995,
+    rating: 8.5,
+    description: "A teenage boy finds himself recruited as a member of an elite team of pilots by his father, who directs a special agency created to fight mysterious beings known as Angels.",
+    poster: "https://m.media-amazon.com/images/M/MV5BZjNhM2Q1NTQtZDY5NS00ZDQ0LTk2ZmQtYzI3MmQ2YjQ5ZjM1XkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+    duration: "24 min"
+},*/
     {
         id: 12,
         title: "The Dark Knight",
